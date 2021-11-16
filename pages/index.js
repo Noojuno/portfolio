@@ -1,56 +1,52 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
+
+function scrollDown() {
+  window.scrollTo(0, window.innerHeight);
+}
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Jono Kemball - Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <header className={styles.header}>
+        <h1 className={styles.name}>Jono Kemball</h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+        <p className={styles.description}>A software developer from Auckland, New Zealand</p>
+
+        <p className={styles.logos}>
+          <a href="https://github.com/Noojuno">
+            <img
+              className={styles.logo}
+              src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png"
+            />
+          </a>
+          {/* <a href="https://github.com/Noojuno"><img src="https://i.imgur.com/SyFCt1j.png"></img></a> */}
         </p>
+        <a className={styles.scroll} onClick={scrollDown}></a>
+      </header>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+      <main className={styles.header}>
+        <h1 className={styles.name}>Jono Kemball</h1>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+        <p className={styles.description}>A software developer from Auckland, New Zealand</p>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+        <p className={styles.logos}>
+          <a href="https://github.com/Noojuno">
+            <img
+              className={styles.logo}
+              src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png"
+            />
           </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+          {/* <a href="https://github.com/Noojuno"><img src="https://i.imgur.com/SyFCt1j.png"></img></a> */}
+        </p>
       </main>
 
-      <footer className={styles.footer}>
+      {/* <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
@@ -59,7 +55,7 @@ export default function Home() {
           Powered by{' '}
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
-      </footer>
+      </footer> */}
     </div>
-  )
+  );
 }
