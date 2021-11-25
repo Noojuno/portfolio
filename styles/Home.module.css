@@ -5,12 +5,18 @@
 
 .header {
   height: 101vh;
-  padding: 0 0 5rem;
+  padding: 0 2.5rem 5rem;
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  background: var(--light-gray) url(/testName.svg) no-repeat top;
+  background-size: auto 100vh;
+
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .footer {
@@ -36,69 +42,70 @@
   margin: 0;
   line-height: 1;
   font-size: 12vh;
-  background: -webkit-linear-gradient(45deg, #348f50, #00cdac 80%);
+
+  /* text-shadow: -1px -1px 0 var(--purple), 1px -1px 0 var(--purple), -1px 1px 0 var(--purple), 1px 1px 0 var(--purple); */
+
+  /* --webkit-text-stroke: 1px var(--purple); */
+
+  /* color: transparent; */
+  color: var(--yellow);
+
+  /* background: var(--yellow) url(/testName.svg) no-repeat top; */
+
+  /* background: -webkit-linear-gradient(45deg, #348f50, #00cdac 80%);
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 
 .name,
-.description {
+.description,
+.heading {
   text-align: center;
 }
 
 .description {
   line-height: 1;
-  font-size: 1.5em;
-  font-weight: 400;
+  font-size: 2.5em;
+  font-weight: 600;
+  margin: 0.5rem 0 0;
+
+  color: var(--light-gray);
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
 }
 
 .logo {
-  max-height: 1.5em;
+  max-height: 3.5em;
 }
 
-.scroll,
-.scroll::before {
-  position: absolute;
-  left: 50%;
+.logo:hover {
+  opacity: 0.8;
 }
 
-.scroll {
-  width: 40px;
-  zoom: 0.8;
-  height: 70px;
-  margin-left: -20px;
-  top: 115vh;
-  margin-top: -35px;
-  box-shadow: inset 0 0 0 1px #313131;
-  border-radius: 25px;
-  cursor: pointer;
-  z-index: 1000;
-  transition: opacity 0.5s ease-out;
+.heading {
+  line-height: 1;
+  font-size: 5em;
+  font-weight: 600;
 }
 
-.scroll::before {
-  content: "";
-  width: 8px;
-  height: 8px;
-  background: #313131;
-  margin-left: -4px;
-  top: 8px;
-  border-radius: 4px;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-name: scroll;
-  animation-name: scroll;
+.main {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@keyframes scroll {
-  0% {
-      opacity: 1
-  }
+.project {
+  display: flex;
+  align-items: stretch;
+}
 
-  to {
-      opacity: 0;
-      transform: translateY(46px)
-  }
+.project img {
+  max-height: 400px;
 }

@@ -1,12 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+
+* {
+  --text-color: #17181e;
+  --dark-gray: #17181E;
+  --light-gray: #f5f5f7;
+  --yellow: #ffe43c;
+
+  --purple: #503750;
+}
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
+  background: var(--light-gray) url(/cool-background12.svg) no-repeat top;
+  background-size: auto 100vh;
+  color: var(--text-color);
 }
 
 a {
