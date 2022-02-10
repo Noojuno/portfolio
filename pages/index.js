@@ -15,8 +15,8 @@ export default function Home() {
           <div className={styles.row}>
             <div className={styles.col__name}>
               <h1 className={styles.text}>
-                hello, i'm
-                <span className={styles["text__name"]}>Jono!</span> a software
+                hey, i'm
+                <span className={styles.text__name}>Jono!</span> a software
                 developer
               </h1>
               <div>&nbsp;</div>
