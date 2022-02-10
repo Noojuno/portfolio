@@ -10,7 +10,8 @@
   /* --accent-color: #ffd21d; */
   --accent-color: #29c379;
 
-  --purple: #503750;
+  --background-color: #111112;
+  --lighter-background-color: #18181c;
 
   box-sizing: border-box;
 }
@@ -22,7 +23,7 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   scroll-behavior: smooth;
-  background: #18181c;
+  background: var(--lighter-background-color);
   background-size: auto 100vh;
   color: var(--text-color);
 }

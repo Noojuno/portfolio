@@ -34,6 +34,10 @@
     font-weight: 600;
     margin: 0.5rem 0 0;
     color: var(--light-text-color);
+
+    a:hover {
+      text-decoration: underline;
+    }
   }
 
   @media only screen and (max-width: 768px) {
@@ -77,6 +81,10 @@
       width: 40%;
       margin: auto;
       animation: bounce 3s ease-in-out infinite;
+
+      img {
+        width: 80%;
+      }
     }
   }
 
@@ -124,24 +132,9 @@
   }
 }
 
-.logos {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.logo {
-  max-height: 3.5em;
-
-  &:hover {
-    opacity: 0.8;
-  }
-}
-
 .heading {
   line-height: 1;
-  font-size: 5em;
+  font-size: 3.6em;
   font-weight: 600;
 }
 
@@ -150,6 +143,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  &__content {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    align-items: stretch;
+  }
 }
 
 .project {
@@ -169,5 +169,21 @@
 
   50% {
     transform: translateY(6px);
+  }
+}
+
+.tools {
+  img {
+    margin-right: 0.75rem;
+  }
+}
+
+.aboutme {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  img {
+    width: auto;
   }
 }

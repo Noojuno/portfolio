@@ -1,5 +1,15 @@
+import classNames from "classnames";
 import Head from "next/head";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardImage,
+  CardText,
+  CardTitle,
+} from "../components/Card";
 import ScrollIcon from "../components/ScrollIcon";
+import { ToolIcon, Tools } from "../components/ToolIcon";
 import styles from "../styles/Home.module.scss";
 
 export default function Home() {
@@ -28,8 +38,7 @@ export default function Home() {
             </div>
             <div className={styles.col__image}>
               <img
-                width="480px"
-                src="/puter.png"
+                src="/computer.png"
                 alt="a picture of a computer with code on it"
               />
             </div>
@@ -39,20 +48,84 @@ export default function Home() {
         <ScrollIcon onClick={() => window.scrollTo(0, window.innerHeight)} />
       </header>
 
-      <main className={styles.main}>
-        <p className={styles.heading}>Portfolio</p>
-      </main>
-
-      <div className="container">
-        <div className="row">
-          <div className="one-half column">
-            <img src="https://i2.wp.com/jonokemball.com/wp-content/uploads/2019/02/fearured-image-voxel.png?w=825&ssl=1" />
-          </div>
-          <div className="one-half column">
-            <img src="https://i2.wp.com/jonokemball.com/wp-content/uploads/2019/02/fearured-image-voxel.png?w=825&ssl=1" />
-          </div>
+      <section className={styles.main}>
+        <div className={classNames(styles.container, styles.main__content)}>
+          <Card className={styles.aboutme}>
+            <img width="300px" src="/me.jpg" />
+            <div>
+              <CardContent>
+                <CardTitle>About Me</CardTitle>
+                <CardText>
+                  My name is Jono Kemball, and I'm a Software Developer based in
+                  Auckland, New Zealand.
+                </CardText>
+              </CardContent>
+              <CardContent>
+                <CardTitle>Tools & Languages</CardTitle>
+                <div className={styles.tools}>
+                  {Object.keys(Tools).map((tool) => {
+                    return <ToolIcon key={tool} tool={Tools[tool]} />;
+                  })}
+                </div>
+              </CardContent>
+            </div>
+          </Card>
         </div>
-      </div>
+      </section>
+
+      <section className={styles.main}>
+        <p className={styles.heading}>Portfolio</p>
+
+        <div className={styles.main__content}>
+          <Card>
+            <CardImage src="/splash.png" />
+
+            <CardContent>
+              <CardTitle>Sneaky Mouse</CardTitle>
+              <CardText>Test!</CardText>
+            </CardContent>
+            <CardFooter>
+              <div className={styles.tools}>
+                {Object.keys(Tools).map((tool) => {
+                  return <ToolIcon key={tool} tool={Tools[tool]} />;
+                })}
+              </div>
+            </CardFooter>
+            <CardFooter>:)</CardFooter>
+          </Card>
+
+          <Card>
+            <CardImage src="/splash.png" />
+
+            <CardContent>
+              <CardTitle>Sneaky Mouse</CardTitle>
+              <CardText>Test!</CardText>
+            </CardContent>
+            <CardFooter>
+              <div className={styles.tools}>
+                <ToolIcon tool={Tools.CSharp} />
+                <ToolIcon tool={Tools.Unity} />
+                <ToolIcon tool={Tools.HTML5} />
+                <ToolIcon tool={Tools.CSS} />
+                <ToolIcon tool={Tools.JavaScript} />
+                <ToolIcon tool={Tools.SocketIO} />
+              </div>
+            </CardFooter>
+            <CardFooter>:)</CardFooter>
+          </Card>
+
+          <Card>
+            <CardImage src="/splash.png" />
+
+            <CardContent>
+              <CardTitle>Sneaky Mouse</CardTitle>
+              <CardText>Test!</CardText>
+            </CardContent>
+            <CardFooter>CSS, HTML, C#, Unity</CardFooter>
+            <CardFooter>:)</CardFooter>
+          </Card>
+        </div>
+      </section>
     </div>
   );
 }
