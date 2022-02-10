@@ -1,35 +1,48 @@
 import Head from "next/head";
 import ScrollIcon from "../components/ScrollIcon";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Home.module.scss";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className={styles.root}>
       <Head>
         <title>Jono Kemball - Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <header className={styles.header}>
-        <div>
-          <h1 className={styles.name}>Jono Kemball</h1>
-
-          <p className={styles.description}>Software Developer</p>
-
-          {/* <p className={styles.logos}>
-            <a href="https://github.com/Noojuno">
+        <div className={styles.container}>
+          <div className={styles.row}>
+            <div className={styles.col__name}>
+              <h1 className={styles.text}>
+                hello, i'm
+                <span className={styles["text__name"]}>Jono!</span> a software
+                developer
+              </h1>
+              <div>&nbsp;</div>
+              <p className={styles.links}>
+                <a href="https://github.com/Noojuno">GitHub</a> •{" "}
+                <a href="https://twitter.com/jonokemball">Twitter</a> •{" "}
+                <a href="mailto:jono@runed.co">Email</a>
+              </p>
+            </div>
+            <div className={styles.col__image}>
               <img
-                className={styles.logo}
-                src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png"
+                width="480px"
+                src="/puter.png"
+                alt="a picture of a computer with code on it"
               />
-            </a>
-            {/* <a href="https://github.com/Noojuno"><img src="https://i.imgur.com/SyFCt1j.png"></img></a> 
-          </p> */}
+            </div>
+          </div>
         </div>
+
         <ScrollIcon onClick={() => window.scrollTo(0, window.innerHeight)} />
       </header>
+
       <main className={styles.main}>
         <p className={styles.heading}>Portfolio</p>
       </main>
+
       <div className="container">
         <div className="row">
           <div className="one-half column">
