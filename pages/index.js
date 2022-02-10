@@ -77,7 +77,7 @@ export default function Home() {
         <p className={styles.heading}>Portfolio</p>
 
         <div className={styles.main__content}>
-          <Card>
+          <Card className={styles.main__card}>
             <CardImage src="/splash.png" />
 
             <CardContent>
@@ -94,7 +94,7 @@ export default function Home() {
             <CardFooter>:)</CardFooter>
           </Card>
 
-          <Card>
+          <Card className={styles.main__card}>
             <CardImage src="/splash.png" />
 
             <CardContent>
@@ -114,7 +114,7 @@ export default function Home() {
             <CardFooter>:)</CardFooter>
           </Card>
 
-          <Card>
+          <Card className={styles.main__card}>
             <CardImage src="/splash.png" />
 
             <CardContent>
