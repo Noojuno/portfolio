@@ -126,6 +126,10 @@ export default function Home() {
           </Card>
         </div>
       </section>
+
+      <footer className={styles.footer}>
+        <a href="https://github.com/Noojuno/portfolio">View source on GitHub</a>
+      </footer>
     </div>
   );
 }

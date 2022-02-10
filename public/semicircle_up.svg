@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1440"
+   height="124"
+   viewBox="0 0 1440 124"
+   version="1.1"
+   id="svg10"
+   sodipodi:docname="semicircle_up.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview12"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="5.8777778"
+     inkscape:cx="581.08696"
+     inkscape:cy="22.457467"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg10">
+    <sodipodi:guide
+       position="2584.6503,-704.88469"
+       orientation="0,-1"
+       id="guide901" />
+  </sodipodi:namedview>
+  <defs
+     id="defs5">
+    <clipPath
+       id="b">
+      <rect
+         width="1440"
+         height="124"
+         id="rect2" />
+    </clipPath>
+  </defs>
+  <g
+     id="a"
+     clip-path="url(#b)"
+     style="stroke:none;stroke-opacity:1;fill:#18181c;fill-opacity:1">
+    <path
+       d="M-503-11635.79h0c-23.857-8.7-48.946-17.063-74.573-24.864-25.705-7.824-52.567-15.266-79.837-22.118-27.41-6.888-55.9-13.348-84.674-19.2-28.976-5.892-58.947-11.309-89.082-16.1-30.406-4.835-61.717-9.151-93.061-12.829-31.687-3.717-64.192-6.873-96.612-9.381-32.8-2.538-66.36-4.475-99.735-5.758-33.821-1.3-68.283-1.958-102.429-1.958s-68.607.659-102.429,1.958c-33.375,1.283-66.93,3.22-99.734,5.758-32.42,2.508-64.925,5.664-96.612,9.381-31.345,3.678-62.655,7.994-93.06,12.829-30.128,4.791-60.1,10.208-89.081,16.1-28.775,5.851-57.263,12.311-84.673,19.2-27.259,6.85-54.12,14.291-79.837,22.119-25.62,7.8-50.709,16.163-74.573,24.863V-11756H-503v120.21Z"
+       transform="translate(1943 11756.001)"
+       fill="#fff"
+       id="path7"
+       style="stroke:none;stroke-opacity:1;fill:#18181c;fill-opacity:1" />
+  </g>
+</svg>
