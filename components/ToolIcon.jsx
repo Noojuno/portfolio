@@ -34,6 +34,10 @@ export const Tools = {
     name: "Socket.IO",
     icon: "/tools/socket-io.svg",
   },
+  AWS: {
+    name: "AWS",
+    icon: "/tools/aws.png",
+  },
   Twitch: {
     name: "Twitch.TV",
     icon: "/tools/twitch.svg",
