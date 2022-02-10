@@ -9,6 +9,8 @@
   width: 450px;
   background: var(--background-color);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 
   &__image {
     img {

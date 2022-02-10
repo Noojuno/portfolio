@@ -84,31 +84,36 @@ export default function Home() {
               <CardTitle>Sneaky Mouse</CardTitle>
               <CardText>Test!</CardText>
             </CardContent>
-            <CardFooter>
-              <div className={styles.tools}>
-                {Object.keys(Tools).map((tool) => {
-                  return <ToolIcon key={tool} tool={Tools[tool]} />;
-                })}
-              </div>
-            </CardFooter>
-            <CardFooter>:)</CardFooter>
-          </Card>
-
-          <Card className={styles.main__card}>
-            <CardImage src="/splash.png" />
-
-            <CardContent>
-              <CardTitle>Sneaky Mouse</CardTitle>
-              <CardText>Test!</CardText>
-            </CardContent>
-            <CardFooter>
-              <div className={styles.tools}>
+            <CardFooter className={styles.tools}>
+              <div>
                 <ToolIcon tool={Tools.CSharp} />
                 <ToolIcon tool={Tools.Unity} />
                 <ToolIcon tool={Tools.HTML5} />
                 <ToolIcon tool={Tools.CSS} />
                 <ToolIcon tool={Tools.JavaScript} />
                 <ToolIcon tool={Tools.SocketIO} />
+                <ToolIcon tool={Tools.Twitch} />
+              </div>
+            </CardFooter>
+            <CardFooter>:)</CardFooter>
+          </Card>
+
+          <Card className={styles.main__card}>
+            <CardImage src="/splash.png" />
+
+            <CardContent>
+              <CardTitle>Sneaky Mouse</CardTitle>
+              <CardText>Sneaky Mouse is a </CardText>
+            </CardContent>
+            <CardFooter className={styles.tools}>
+              <div>
+                <ToolIcon tool={Tools.CSharp} />
+                <ToolIcon tool={Tools.Unity} />
+                <ToolIcon tool={Tools.HTML5} />
+                <ToolIcon tool={Tools.CSS} />
+                <ToolIcon tool={Tools.JavaScript} />
+                <ToolIcon tool={Tools.SocketIO} />
+                <ToolIcon tool={Tools.Twitch} />
               </div>
             </CardFooter>
             <CardFooter>:)</CardFooter>
@@ -121,7 +126,17 @@ export default function Home() {
               <CardTitle>Sneaky Mouse</CardTitle>
               <CardText>Test!</CardText>
             </CardContent>
-            <CardFooter>CSS, HTML, C#, Unity</CardFooter>
+            <CardFooter className={styles.tools}>
+              <div>
+                <ToolIcon tool={Tools.CSharp} />
+                <ToolIcon tool={Tools.Unity} />
+                <ToolIcon tool={Tools.HTML5} />
+                <ToolIcon tool={Tools.CSS} />
+                <ToolIcon tool={Tools.JavaScript} />
+                <ToolIcon tool={Tools.SocketIO} />
+                <ToolIcon tool={Tools.Twitch} />
+              </div>
+            </CardFooter>
             <CardFooter>:)</CardFooter>
           </Card>
         </div>

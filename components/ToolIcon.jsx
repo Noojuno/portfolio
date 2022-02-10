@@ -46,6 +46,10 @@ export const Tools = {
     name: "Next.js",
     icon: "/tools/nextjs.svg",
   },
+  ChromeExtension: {
+    name: "Chrome Extensions/Chrome Web Store",
+    icon: "/tools/chromestore.png",
+  },
 };
 
 export function ToolIcon({ tool }) {
