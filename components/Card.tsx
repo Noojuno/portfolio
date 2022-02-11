@@ -1,10 +1,10 @@
 import classNames from "classnames";
 import styles from "./Card.module.scss";
 
-type ReactElement = JSX.Element | JSX.Element[] | string | string[];
+type ReactElement = JSX.Element | string;
 
 interface CardProps {
-  children?: ReactElement;
+  children?: ReactElement | ReactElement[];
   className?: string;
 }
 

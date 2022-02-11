@@ -204,8 +204,6 @@
 }
 
 .footer {
-  color: var(--light-text-color);
-
   background: url("/semicircle_up.svg"), #111112;
   background-position: 50% 0%, 0px 0px;
   background-size: contain, auto;
@@ -215,11 +213,12 @@
   padding-top: 9rem;
   padding-bottom: 8rem;
 
-  margin-top: 10rem;
-
+  margin-top: 5rem;
   text-align: center;
 
   a {
+    color: var(--light-text-color);
+
     &:hover {
       text-decoration: underline;
     }

@@ -68,9 +68,11 @@ export default function Home() {
               <CardContent>
                 <CardTitle>Tools & Languages</CardTitle>
                 <div className={styles.project__tools}>
-                  {Object.keys(Tools).map((tool) => {
-                    return <ToolIcon key={tool} tool={Tools[tool]} />;
-                  })}
+                  {Object.keys(Tools)
+                    .filter((t) => !Tools[t].hide)
+                    .map((tool) => {
+                      return <ToolIcon key={tool} tool={Tools[tool]} />;
+                    })}
                 </div>
               </CardContent>
             </div>
@@ -92,7 +94,7 @@ export default function Home() {
                 show off all the projects I have worked on.
               </CardText>
               <CardText>
-                It is built using React and Next.js using SCSS Modules for the
+                It is built using React and Next.js with SCSS Modules for the
                 styling.
               </CardText>
             </CardContent>
@@ -113,11 +115,56 @@ export default function Home() {
           </Card>
 
           <Card className={styles.project__card}>
+            <CardImage src="/projects/puppetpals.png" />
+
+            <CardContent>
+              <CardTitle>Puppet Pals</CardTitle>
+              <CardText>
+                A virtual puppeteering tool designed for live shows and online
+                tabletop RPG games. Initially built in C# using the Unity game
+                engine, I took over active development in 2019.
+              </CardText>
+              <CardText>
+                It is currently undergoing a rewrite <em>(pictured above)</em>{" "}
+                using React, TypeScript, and Electron with PixiJS as the
+                rendering engine to allow for browser-based use.
+              </CardText>
+              <CardText></CardText>
+            </CardContent>
+            <CardFooter className={styles.project__tools}>
+              <div>
+                <ToolIcon tool={Tools.CSharp} />
+                <ToolIcon tool={Tools.Unity} />
+                <ToolIcon tool={Tools.HTML5} />
+                <ToolIcon tool={Tools.CSS} />
+                <ToolIcon tool={Tools.JavaScript} />
+                <ToolIcon tool={Tools.React} />
+                <ToolIcon tool={Tools.PixiJS} />
+                <ToolIcon tool={Tools.Electron} />
+                <ToolIcon tool={Tools.SocketIO} />
+              </div>
+            </CardFooter>
+            <CardFooter className={styles.project__buttons}>
+              <Button disabled>Demo Video</Button>
+            </CardFooter>
+          </Card>
+
+          <Card className={styles.project__card}>
             <CardImage src="/projects/sneakymouse.jpg" />
 
             <CardContent>
               <CardTitle>Sneaky Mouse</CardTitle>
-              <CardText>Test!</CardText>
+              <CardText>
+                A way for the streamer <em>rawb</em> on Twitch.tv to interact
+                with his audience. Controlled through a live chat as well as a
+                web app, Sneaky Mouse allows a viewer to customize a mouse
+                avatar by collecting cheese, hats, and other items.
+              </CardText>
+              <CardText>
+                Sneaky Mouse is used by <em>100+</em> viewers per week with an
+                all time peak of <em>1900</em> concurrent viewers, and has
+                recently passed <em>8000</em> lifetime users.
+              </CardText>
             </CardContent>
             <CardFooter className={styles.project__tools}>
               <div>
@@ -138,11 +185,50 @@ export default function Home() {
           </Card>
 
           <Card className={styles.project__card}>
+            <CardImage src="/projects/mcm.jpg" />
+
+            <CardContent>
+              <CardTitle>Multi Character Mod</CardTitle>
+              <CardText>
+                A mod for Minecraft that adds support for multiple characters in
+                a single world. It has built in integration with several other
+                mods, and has been adopted by multiple medium - large Minecraft
+                servers.
+              </CardText>
+              <CardText>Built for the SneakyRP Minecraft server.</CardText>
+            </CardContent>
+            <CardFooter className={styles.project__tools}>
+              <div>
+                <ToolIcon tool={Tools.Java} />
+                <ToolIcon tool={Tools.MCForge} />
+                <ToolIcon tool={Tools.Minecraft} />
+              </div>
+            </CardFooter>
+            <CardFooter className={styles.project__buttons}>
+              <Button href="https://www.curseforge.com/minecraft/mc-mods/multi-character-mod">
+                CurseForge
+              </Button>
+              <Button href="https://github.com/Noojuno/RoosterTeethPlusPlus">
+                GitHub
+              </Button>
+            </CardFooter>
+          </Card>
+
+          <Card className={styles.project__card}>
             <CardImage src="/projects/ldjam.jpg" />
 
             <CardContent>
               <CardTitle>Ludum Dare</CardTitle>
-              <CardText>Test!</CardText>
+              <CardText>
+                The site that hosts the 48 hour Ludum Dare game jam. It is built
+                with a Preact and JavaScript frontend, and a custom CMS built
+                using PHP and MySQL in the backend.
+              </CardText>
+              <CardText>
+                My main contributions were building a custom router system for
+                the node-based CMS, building reusable grid layout components,
+                and general bugfixes.
+              </CardText>
             </CardContent>
             <CardFooter className={styles.project__tools}>
               <div>
@@ -169,7 +255,16 @@ export default function Home() {
 
             <CardContent>
               <CardTitle>Rooster Teeth++</CardTitle>
-              <CardText>Test!</CardText>
+              <CardText>
+                A Chrome Extension that hooks into the Rooster Teeth website to
+                add features and tweak the website layout.
+              </CardText>
+              <CardText>
+                Many of the features implemented by my extension were later
+                implemented by the team at Rooster Teeth. At it's peak it was
+                gaining an average of <em>50</em> new users a day, with an all
+                time peak of just over <em>1300</em> active users.
+              </CardText>
             </CardContent>
             <CardFooter className={styles.project__tools}>
               <div>
@@ -193,7 +288,10 @@ export default function Home() {
       </section>
 
       <footer className={styles.footer}>
-        <a href="https://github.com/Noojuno/portfolio">View source on GitHub</a>
+        <p>
+          <a href="#">back to top &uarr;</a>
+        </p>
+        <a href="https://github.com/Noojuno/portfolio">view source on GitHub</a>
       </footer>
     </div>
   );

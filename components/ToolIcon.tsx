@@ -4,6 +4,7 @@ import styles from "./ToolIcon.module.scss";
 interface Tool {
   name: string;
   icon: string;
+  hide?: boolean;
 }
 
 export const Tools: { [id: string]: Tool } = {
@@ -40,11 +41,6 @@ export const Tools: { [id: string]: Tool } = {
     name: "Java",
     icon: "/tools/java.png",
   },
-  /* Game Dev */
-  Unity: {
-    name: "Unity",
-    icon: "/tools/unity.png",
-  },
   /* CSS Processors and related */
   SASS: {
     name: "SASS/SCSS",
@@ -53,10 +49,24 @@ export const Tools: { [id: string]: Tool } = {
   LESS: {
     name: "LESS",
     icon: "/tools/less.png",
+    hide: true,
   },
   CSSModules: {
     name: "CSS Modules",
     icon: "/tools/cssmodules.svg",
+  },
+  /* Game Dev */
+  Unity: {
+    name: "Unity",
+    icon: "/tools/unity.png",
+  },
+  PixiJS: {
+    name: "PixiJS",
+    icon: "/tools/pixijs.svg",
+  },
+  Electron: {
+    name: "Electron",
+    icon: "/tools/electron.png",
   },
   /* Backend */
   NodeJS: {
@@ -92,6 +102,17 @@ export const Tools: { [id: string]: Tool } = {
   Twitch: {
     name: "Twitch.tv",
     icon: "/tools/twitch.svg",
+    hide: true,
+  },
+  MCForge: {
+    name: "Minecraft Forge",
+    icon: "/tools/forge.png",
+    hide: true,
+  },
+  Minecraft: {
+    name: "Minecraft",
+    icon: "/tools/minecraft.png",
+    hide: true,
   },
   ChromeExtension: {
     name: "Chrome Extensions/Chrome Web Store",
