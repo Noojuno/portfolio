@@ -8,14 +8,23 @@ interface ButtonProps {
   className?: string;
   onClick?: () => void;
   href?: string;
+  disabled?: boolean;
 }
 
-export function Button({ children, className, onClick, href }: ButtonProps) {
+export function Button({
+  children,
+  className,
+  onClick = () => {},
+  href,
+  disabled,
+}: ButtonProps) {
   return (
     <a
-      href={href}
-      className={classNames(styles.button, className)}
-      onClick={onClick}
+      href={disabled ? null : href}
+      className={classNames(styles.button, className, {
+        [styles.button__disabled]: disabled,
+      })}
+      onClick={disabled ? null : onClick}
     >
       {children}
     </a>

@@ -5,7 +5,12 @@
   padding: 0.5rem 1.25rem;
   cursor: pointer;
 
-  &:hover {
+  &__disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+
+  &:not(&__disabled):hover {
     background-color: var(--btn-hover-color);
   }
 }
