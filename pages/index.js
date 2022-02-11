@@ -49,9 +49,13 @@ export default function Home() {
       </header>
 
       <section className={styles.main}>
-        <div className={classNames(styles.container, styles.main__content)}>
+        <div className={styles.container}>
           <Card className={styles.aboutme}>
-            <img width="300px" src="/me.jpg" />
+            <img
+              className={styles.aboutme__image}
+              src="/me.jpg"
+              alt="a picture of me"
+            />
             <div>
               <CardContent>
                 <CardTitle>About Me</CardTitle>
@@ -76,9 +80,9 @@ export default function Home() {
       <section className={styles.main}>
         <p className={styles.heading}>Portfolio</p>
 
-        <div className={styles.main__content}>
+        <div className={classNames(styles.container, styles.main__content)}>
           <Card className={styles.main__card}>
-            <CardImage src="/splash.png" />
+            <CardImage src="/projects/sneakymouse.jpg" />
 
             <CardContent>
               <CardTitle>Sneaky Mouse</CardTitle>
@@ -91,7 +95,9 @@ export default function Home() {
                 <ToolIcon tool={Tools.HTML5} />
                 <ToolIcon tool={Tools.CSS} />
                 <ToolIcon tool={Tools.JavaScript} />
-                <ToolIcon tool={Tools.SocketIO} />
+                <ToolIcon tool={Tools.React} />
+                <ToolIcon tool={Tools.NodeJS} />
+                <ToolIcon tool={Tools.MongoDB} />
                 <ToolIcon tool={Tools.Twitch} />
               </div>
             </CardFooter>
@@ -99,42 +105,59 @@ export default function Home() {
           </Card>
 
           <Card className={styles.main__card}>
-            <CardImage src="/splash.png" />
+            <CardImage src="/projects/portfolio.jpg" />
 
             <CardContent>
-              <CardTitle>Sneaky Mouse</CardTitle>
-              <CardText>Sneaky Mouse is a </CardText>
+              <CardTitle>Portfolio Website</CardTitle>
+              <CardText>The very website you are on right now! </CardText>
             </CardContent>
             <CardFooter className={styles.tools}>
               <div>
-                <ToolIcon tool={Tools.CSharp} />
-                <ToolIcon tool={Tools.Unity} />
                 <ToolIcon tool={Tools.HTML5} />
                 <ToolIcon tool={Tools.CSS} />
-                <ToolIcon tool={Tools.JavaScript} />
-                <ToolIcon tool={Tools.SocketIO} />
-                <ToolIcon tool={Tools.Twitch} />
+                <ToolIcon tool={Tools.TypeScript} />
+                <ToolIcon tool={Tools.React} />
+                <ToolIcon tool={Tools.SASS} />
+                <ToolIcon tool={Tools.NextJS} />
               </div>
             </CardFooter>
             <CardFooter>:)</CardFooter>
           </Card>
 
           <Card className={styles.main__card}>
-            <CardImage src="/splash.png" />
+            <CardImage src="/projects/ldjam.jpg" />
 
             <CardContent>
-              <CardTitle>Sneaky Mouse</CardTitle>
+              <CardTitle>Ludum Dare</CardTitle>
               <CardText>Test!</CardText>
             </CardContent>
             <CardFooter className={styles.tools}>
               <div>
-                <ToolIcon tool={Tools.CSharp} />
-                <ToolIcon tool={Tools.Unity} />
                 <ToolIcon tool={Tools.HTML5} />
                 <ToolIcon tool={Tools.CSS} />
                 <ToolIcon tool={Tools.JavaScript} />
-                <ToolIcon tool={Tools.SocketIO} />
-                <ToolIcon tool={Tools.Twitch} />
+                <ToolIcon tool={Tools.React} />
+                <ToolIcon tool={Tools.PHP} />
+                <ToolIcon tool={Tools.MySQL} />
+              </div>
+            </CardFooter>
+            <CardFooter>:)</CardFooter>
+          </Card>
+
+          <Card className={styles.main__card}>
+            <CardImage src="/projects/rtpp.jpg" />
+
+            <CardContent>
+              <CardTitle>Rooster Teeth++</CardTitle>
+              <CardText>Test!</CardText>
+            </CardContent>
+            <CardFooter className={styles.tools}>
+              <div>
+                <ToolIcon tool={Tools.HTML5} />
+                <ToolIcon tool={Tools.CSS} />
+                <ToolIcon tool={Tools.JavaScript} />
+                <ToolIcon tool={Tools.React} />
+                <ToolIcon tool={Tools.ChromeExtension} />
               </div>
             </CardFooter>
             <CardFooter>:)</CardFooter>
