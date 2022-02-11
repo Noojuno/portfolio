@@ -157,13 +157,17 @@ export default function Home() {
               <CardText>
                 A way for the streamer <em>rawb</em> on Twitch.tv to interact
                 with his audience. Controlled through a live chat as well as a
-                web app, Sneaky Mouse allows a viewer to customize a mouse
-                avatar by collecting cheese, hats, and other items.
+                web app, Sneaky Mouse allows viewers to customize a mouse avatar
+                by collecting cheese, hats, and other items.
               </CardText>
               <CardText>
-                Sneaky Mouse is used by <em>100+</em> viewers per week with an
-                all time peak of <em>1900</em> concurrent viewers, and has
-                recently passed <em>8000</em> lifetime users.
+                The game itself is written using C# in the Unity game engine,
+                with a backend written in JS using Node.js and WebSockets. The
+                web app is written in JS using React.
+              </CardText>
+              <CardText>
+                Sneaky Mouse recently passed <em>8000</em> unique lifetime
+                users.
               </CardText>
             </CardContent>
             <CardFooter className={styles.project__tools}>
