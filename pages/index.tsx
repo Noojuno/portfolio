@@ -124,7 +124,7 @@ export default function Home() {
               <CardText>
                 A virtual puppeteering tool designed for live shows and online
                 tabletop RPG games. Initially built in C# using the Unity game
-                engine, I took over active development in 2019.
+                engine in 2017, I took over active development in 2019.
               </CardText>
               <CardText>
                 It is currently undergoing a rewrite <em>(pictured above)</em>{" "}
