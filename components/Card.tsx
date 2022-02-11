@@ -1,11 +1,23 @@
 import classNames from "classnames";
 import styles from "./Card.module.scss";
 
-export function Card({ title, children, footer, image = null, className }) {
+type ReactElement = JSX.Element | JSX.Element[] | string | string[];
+
+interface CardProps {
+  children?: ReactElement;
+  className?: string;
+}
+
+interface CardImageProps extends CardProps {
+  src: string;
+  alt?: string;
+}
+
+export function Card({ children, className }: CardProps) {
   return <div className={classNames(styles.card, className)}>{children}</div>;
 }
 
-export function CardImage({ src, alt = null, className }) {
+export function CardImage({ src, alt = null, className }: CardImageProps) {
   return (
     <div className={classNames(styles.card__image, className)}>
       <img src={src} alt={alt} />
@@ -13,7 +25,7 @@ export function CardImage({ src, alt = null, className }) {
   );
 }
 
-export function CardContent({ children, className }) {
+export function CardContent({ children, className }: CardProps) {
   return (
     <div className={classNames(styles.card__content, className)}>
       {children}
@@ -21,7 +33,7 @@ export function CardContent({ children, className }) {
   );
 }
 
-export function CardTitle({ children, className }) {
+export function CardTitle({ children, className }: CardProps) {
   return (
     <div className={classNames(styles.card__header, className)}>
       <h1>{children}</h1>
@@ -33,7 +45,7 @@ export function CardText({ children }) {
   return <>{children}</>;
 }
 
-export function CardFooter({ children, className }) {
+export function CardFooter({ children, className }: CardProps) {
   return (
     <div className={classNames(styles.card__footer, className)}>{children}</div>
   );

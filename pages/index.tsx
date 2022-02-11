@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import Head from "next/head";
+import { Button } from "../components/Button";
 import {
   Card,
   CardContent,
@@ -8,7 +9,7 @@ import {
   CardText,
   CardTitle,
 } from "../components/Card";
-import ScrollIcon from "../components/ScrollIcon";
+import { ScrollIcon } from "../components/ScrollIcon";
 import { ToolIcon, Tools } from "../components/ToolIcon";
 import styles from "../styles/Home.module.scss";
 
@@ -66,7 +67,7 @@ export default function Home() {
               </CardContent>
               <CardContent>
                 <CardTitle>Tools & Languages</CardTitle>
-                <div className={styles.tools}>
+                <div className={styles.project__tools}>
                   {Object.keys(Tools).map((tool) => {
                     return <ToolIcon key={tool} tool={Tools[tool]} />;
                   })}
@@ -81,14 +82,14 @@ export default function Home() {
         <p className={styles.heading}>Portfolio</p>
 
         <div className={classNames(styles.container, styles.main__content)}>
-          <Card className={styles.main__card}>
+          <Card className={styles.project__card}>
             <CardImage src="/projects/sneakymouse.jpg" />
 
             <CardContent>
               <CardTitle>Sneaky Mouse</CardTitle>
               <CardText>Test!</CardText>
             </CardContent>
-            <CardFooter className={styles.tools}>
+            <CardFooter className={styles.project__tools}>
               <div>
                 <ToolIcon tool={Tools.CSharp} />
                 <ToolIcon tool={Tools.Unity} />
@@ -101,17 +102,19 @@ export default function Home() {
                 <ToolIcon tool={Tools.Twitch} />
               </div>
             </CardFooter>
-            <CardFooter>:)</CardFooter>
+            <CardFooter className={styles.project__buttons}>
+              <Button>Demo Video</Button>
+            </CardFooter>
           </Card>
 
-          <Card className={styles.main__card}>
+          <Card className={styles.project__card}>
             <CardImage src="/projects/portfolio.jpg" />
 
             <CardContent>
-              <CardTitle>Portfolio Website</CardTitle>
+              <CardTitle>2022 Portfolio</CardTitle>
               <CardText>The very website you are on right now! </CardText>
             </CardContent>
-            <CardFooter className={styles.tools}>
+            <CardFooter className={styles.project__tools}>
               <div>
                 <ToolIcon tool={Tools.HTML5} />
                 <ToolIcon tool={Tools.CSS} />
@@ -121,37 +124,45 @@ export default function Home() {
                 <ToolIcon tool={Tools.NextJS} />
               </div>
             </CardFooter>
-            <CardFooter>:)</CardFooter>
+            <CardFooter className={styles.project__buttons}>
+              <Button>GitHub</Button>
+            </CardFooter>
           </Card>
 
-          <Card className={styles.main__card}>
+          <Card className={styles.project__card}>
             <CardImage src="/projects/ldjam.jpg" />
 
             <CardContent>
               <CardTitle>Ludum Dare</CardTitle>
               <CardText>Test!</CardText>
             </CardContent>
-            <CardFooter className={styles.tools}>
+            <CardFooter className={styles.project__tools}>
               <div>
                 <ToolIcon tool={Tools.HTML5} />
                 <ToolIcon tool={Tools.CSS} />
                 <ToolIcon tool={Tools.JavaScript} />
                 <ToolIcon tool={Tools.React} />
+                <ToolIcon tool={Tools.LESS} />
                 <ToolIcon tool={Tools.PHP} />
                 <ToolIcon tool={Tools.MySQL} />
               </div>
             </CardFooter>
-            <CardFooter>:)</CardFooter>
+            <CardFooter className={styles.project__buttons}>
+              <Button href="https://github.com/JammerCore/JammerCore">
+                GitHub
+              </Button>
+              <Button href="https://ldjam.com/">Live Site</Button>
+            </CardFooter>
           </Card>
 
-          <Card className={styles.main__card}>
+          <Card className={styles.project__card}>
             <CardImage src="/projects/rtpp.jpg" />
 
             <CardContent>
               <CardTitle>Rooster Teeth++</CardTitle>
               <CardText>Test!</CardText>
             </CardContent>
-            <CardFooter className={styles.tools}>
+            <CardFooter className={styles.project__tools}>
               <div>
                 <ToolIcon tool={Tools.HTML5} />
                 <ToolIcon tool={Tools.CSS} />
@@ -160,7 +171,10 @@ export default function Home() {
                 <ToolIcon tool={Tools.ChromeExtension} />
               </div>
             </CardFooter>
-            <CardFooter>:)</CardFooter>
+            <CardFooter className={styles.project__buttons}>
+              <Button>GitHub</Button>
+              <Button>Chrome Web Store</Button>
+            </CardFooter>
           </Card>
         </div>
       </section>

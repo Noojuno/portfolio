@@ -144,10 +144,6 @@
       grid-template-columns: 100%;
     }
   }
-
-  &__card {
-    width: 95%;
-  }
 }
 
 @keyframes bounce {
@@ -161,13 +157,28 @@
   }
 }
 
-.tools {
-  margin-top: auto;
-  margin-bottom: -0.75rem;
+.project {
+  &__card {
+    width: 95%;
+  }
 
-  img {
-    margin-right: 0.75rem;
-    margin-bottom: 0.75rem;
+  &__tools {
+    margin-top: auto;
+    margin-bottom: -0.75rem;
+
+    img {
+      margin-right: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: flex-end;
+
+    a:not(:last-child) {
+      margin-right: 0.5rem;
+    }
   }
 }
 

@@ -1,7 +1,12 @@
 import Tippy from "@tippyjs/react";
 import styles from "./ToolIcon.module.scss";
 
-export const Tools = {
+interface Tool {
+  name: string;
+  icon: string;
+}
+
+export const Tools: { [id: string]: Tool } = {
   HTML5: {
     name: "HTML5",
     icon: "/tools/html5.svg",
@@ -84,7 +89,7 @@ export const Tools = {
   },
 };
 
-export function ToolIcon({ tool }) {
+export function ToolIcon({ tool }: { tool: Tool }) {
   return (
     <Tippy content={tool.name}>
       <img className={styles.icon} src={tool.icon} alt={`${tool.name} Logo`} />

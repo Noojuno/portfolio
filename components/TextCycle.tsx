@@ -7,13 +7,11 @@ export default function TextCycle({
 }) {
   if (inputs.length < 0) return <></>;
 
-  const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState<number>(0);
 
   useEffect(() => {
     const instance = setInterval(() => {
       setCurrent((c) => {
-        console.log(c);
-
         return ++c % inputs.length;
       });
     }, interval);
