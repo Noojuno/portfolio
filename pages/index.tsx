@@ -103,7 +103,7 @@ export default function Home() {
               </div>
             </CardFooter>
             <CardFooter className={styles.project__buttons}>
-              <Button>Demo Video</Button>
+              <Button disabled>Demo Video</Button>
             </CardFooter>
           </Card>
 
@@ -112,7 +112,10 @@ export default function Home() {
 
             <CardContent>
               <CardTitle>2022 Portfolio</CardTitle>
-              <CardText>The very website you are on right now! </CardText>
+              <CardText>
+                The very website you are on right now! This website was built to
+                show off all the projects I have worked on.
+              </CardText>
             </CardContent>
             <CardFooter className={styles.project__tools}>
               <div>
@@ -120,6 +123,7 @@ export default function Home() {
                 <ToolIcon tool={Tools.CSS} />
                 <ToolIcon tool={Tools.TypeScript} />
                 <ToolIcon tool={Tools.React} />
+                <ToolIcon tool={Tools.CSSModules} />
                 <ToolIcon tool={Tools.SASS} />
                 <ToolIcon tool={Tools.NextJS} />
               </div>
@@ -148,10 +152,11 @@ export default function Home() {
               </div>
             </CardFooter>
             <CardFooter className={styles.project__buttons}>
+              <Button href="https://ldjam.com/">Live Site</Button>
+
               <Button href="https://github.com/JammerCore/JammerCore">
                 GitHub
               </Button>
-              <Button href="https://ldjam.com/">Live Site</Button>
             </CardFooter>
           </Card>
 
@@ -172,8 +177,12 @@ export default function Home() {
               </div>
             </CardFooter>
             <CardFooter className={styles.project__buttons}>
-              <Button>GitHub</Button>
-              <Button>Chrome Web Store</Button>
+              <Button href="https://chrome.google.com/webstore/detail/rooster-teeth%20%20/joeobflmcmlhgjpbgolpdmpphaijhlee">
+                Chrome Web Store
+              </Button>
+              <Button href="https://github.com/Noojuno/RoosterTeethPlusPlus">
+                GitHub
+              </Button>
             </CardFooter>
           </Card>
         </div>

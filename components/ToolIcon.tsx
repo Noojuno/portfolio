@@ -15,6 +15,10 @@ export const Tools: { [id: string]: Tool } = {
     name: "CSS3",
     icon: "/tools/css.svg",
   },
+  CSSModules: {
+    name: "CSS Modules",
+    icon: "/tools/cssmodules.svg",
+  },
   React: {
     name: "React",
     icon: "/tools/react.svg",
