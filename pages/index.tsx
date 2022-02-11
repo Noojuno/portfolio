@@ -110,7 +110,9 @@ export default function Home() {
               </div>
             </CardFooter>
             <CardFooter className={styles.project__buttons}>
-              <Button>GitHub</Button>
+              <Button href="https://github.com/Noojuno/portfolio">
+                GitHub
+              </Button>
             </CardFooter>
           </Card>
 
