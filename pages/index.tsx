@@ -83,6 +83,36 @@ export default function Home() {
 
         <div className={classNames(styles.container, styles.main__content)}>
           <Card className={styles.project__card}>
+            <CardImage src="/projects/portfolio.jpg" />
+
+            <CardContent>
+              <CardTitle>2022 Portfolio</CardTitle>
+              <CardText>
+                The very website you are on right now! This website was built to
+                show off all the projects I have worked on.
+              </CardText>
+              <CardText>
+                It is built using React and Next.js using SCSS Modules for the
+                styling.
+              </CardText>
+            </CardContent>
+            <CardFooter className={styles.project__tools}>
+              <div>
+                <ToolIcon tool={Tools.HTML5} />
+                <ToolIcon tool={Tools.CSS} />
+                <ToolIcon tool={Tools.TypeScript} />
+                <ToolIcon tool={Tools.React} />
+                <ToolIcon tool={Tools.CSSModules} />
+                <ToolIcon tool={Tools.SASS} />
+                <ToolIcon tool={Tools.NextJS} />
+              </div>
+            </CardFooter>
+            <CardFooter className={styles.project__buttons}>
+              <Button>GitHub</Button>
+            </CardFooter>
+          </Card>
+
+          <Card className={styles.project__card}>
             <CardImage src="/projects/sneakymouse.jpg" />
 
             <CardContent>
@@ -104,32 +134,6 @@ export default function Home() {
             </CardFooter>
             <CardFooter className={styles.project__buttons}>
               <Button disabled>Demo Video</Button>
-            </CardFooter>
-          </Card>
-
-          <Card className={styles.project__card}>
-            <CardImage src="/projects/portfolio.jpg" />
-
-            <CardContent>
-              <CardTitle>2022 Portfolio</CardTitle>
-              <CardText>
-                The very website you are on right now! This website was built to
-                show off all the projects I have worked on.
-              </CardText>
-            </CardContent>
-            <CardFooter className={styles.project__tools}>
-              <div>
-                <ToolIcon tool={Tools.HTML5} />
-                <ToolIcon tool={Tools.CSS} />
-                <ToolIcon tool={Tools.TypeScript} />
-                <ToolIcon tool={Tools.React} />
-                <ToolIcon tool={Tools.CSSModules} />
-                <ToolIcon tool={Tools.SASS} />
-                <ToolIcon tool={Tools.NextJS} />
-              </div>
-            </CardFooter>
-            <CardFooter className={styles.project__buttons}>
-              <Button>GitHub</Button>
             </CardFooter>
           </Card>
 

@@ -7,6 +7,7 @@ interface Tool {
 }
 
 export const Tools: { [id: string]: Tool } = {
+  /* Languages */
   HTML5: {
     name: "HTML5",
     icon: "/tools/html5.svg",
@@ -14,10 +15,6 @@ export const Tools: { [id: string]: Tool } = {
   CSS: {
     name: "CSS3",
     icon: "/tools/css.svg",
-  },
-  CSSModules: {
-    name: "CSS Modules",
-    icon: "/tools/cssmodules.svg",
   },
   React: {
     name: "React",
@@ -43,6 +40,12 @@ export const Tools: { [id: string]: Tool } = {
     name: "Java",
     icon: "/tools/java.png",
   },
+  /* Game Dev */
+  Unity: {
+    name: "Unity",
+    icon: "/tools/unity.png",
+  },
+  /* CSS Processors and related */
   SASS: {
     name: "SASS/SCSS",
     icon: "/tools/sass.svg",
@@ -51,14 +54,11 @@ export const Tools: { [id: string]: Tool } = {
     name: "LESS",
     icon: "/tools/less.png",
   },
-  Unity: {
-    name: "Unity",
-    icon: "/tools/unity.png",
+  CSSModules: {
+    name: "CSS Modules",
+    icon: "/tools/cssmodules.svg",
   },
-  Wordpress: {
-    name: "WordPress",
-    icon: "/tools/wordpress.png",
-  },
+  /* Backend */
   NodeJS: {
     name: "Node.js",
     icon: "/tools/nodejs.svg",
@@ -75,6 +75,7 @@ export const Tools: { [id: string]: Tool } = {
     name: "Amazon Web Services (AWS)",
     icon: "/tools/aws.png",
   },
+  /* Databases */
   MongoDB: {
     name: "MongoDB",
     icon: "/tools/mongo.png",
@@ -82,6 +83,11 @@ export const Tools: { [id: string]: Tool } = {
   MySQL: {
     name: "MySQL/MariaDB",
     icon: "/tools/mysql.png",
+  },
+  /* Misc */
+  Wordpress: {
+    name: "WordPress",
+    icon: "/tools/wordpress.png",
   },
   Twitch: {
     name: "Twitch.tv",

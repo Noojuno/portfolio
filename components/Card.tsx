@@ -41,8 +41,8 @@ export function CardTitle({ children, className }: CardProps) {
   );
 }
 
-export function CardText({ children }) {
-  return <>{children}</>;
+export function CardText({ children, className }: CardProps) {
+  return <p className={classNames(styles.card__text, className)}>{children}</p>;
 }
 
 export function CardFooter({ children, className }: CardProps) {
