@@ -257,6 +257,31 @@ export default function Home() {
           </Card>
 
           <Card className={styles.project__card}>
+            <CardImage src="/projects/gateless.jpg" />
+
+            <CardContent>
+              <CardTitle>gateless</CardTitle>
+              <CardText>
+                A wrapper for AWS Lambda and API Gateway in JavaScript. It was
+                designed to simplify requests by removing unnecessary
+                boilerplate.
+              </CardText>
+            </CardContent>
+            <CardFooter className={styles.project__tools}>
+              <div>
+                <ToolIcon tool={Tools.JavaScript} />
+                <ToolIcon tool={Tools.NodeJS} />
+                <ToolIcon tool={Tools.AWS} />
+              </div>
+            </CardFooter>
+            <CardFooter className={styles.project__buttons}>
+              <Button href="https://www.npmjs.com/package/gateless">NPM</Button>
+
+              <Button href="https://github.com/Noojuno/gateless">GitHub</Button>
+            </CardFooter>
+          </Card>
+
+          <Card className={styles.project__card}>
             <CardImage src="/projects/rtpp.jpg" />
 
             <CardContent>
