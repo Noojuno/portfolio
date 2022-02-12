@@ -275,7 +275,7 @@ export default function Home() {
               </div>
             </CardFooter>
             <CardFooter className={styles.project__buttons}>
-              <Button href="https://www.npmjs.com/package/gateless">NPM</Button>
+              <Button href="https://www.npmjs.com/package/gateless">npm</Button>
 
               <Button href="https://github.com/Noojuno/gateless">GitHub</Button>
             </CardFooter>
