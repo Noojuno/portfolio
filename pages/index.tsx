@@ -117,37 +117,42 @@ export default function Home() {
           </Card>
 
           <Card className={styles.project__card}>
-            <CardImage src="/projects/puppetpals.png" />
+            <CardImage src="/projects/dvz.jpg" />
 
             <CardContent>
-              <CardTitle>Puppet Pals</CardTitle>
+              <CardTitle>Dwarves vs Zombies</CardTitle>
               <CardText>
-                A virtual puppeteering tool designed for live shows and online
-                tabletop RPG games. Initially built in C# using the Unity game
-                engine in 2017, I took over active development in 2019.
+                An upcoming Minecraft server <em>(releasing later in 2022)</em>.
               </CardText>
               <CardText>
-                It is currently undergoing a rewrite <em>(pictured above)</em>{" "}
-                using React, TypeScript, and Electron with PixiJS as the
-                rendering engine to allow for browser-based use.
+                The backend is built with one <em>master</em> server and many{" "}
+                <em>child</em> servers. The master server tracks and controls
+                the child servers, as well as communicates with a web panel to
+                send and retrieve information. The child servers each control
+                multiple Minecraft server instances, to allow for multiple games
+                to run concurrently.
               </CardText>
-              <CardText></CardText>
+              <CardText>
+                The Minecraft servers themselves use a collection of plugins
+                written in Java for game specific code. It also uses Redis for
+                fast inter-server communication.
+              </CardText>
             </CardContent>
             <CardFooter className={styles.project__tools}>
               <div>
-                <ToolIcon tool={Tools.CSharp} />
-                <ToolIcon tool={Tools.Unity} />
-                <ToolIcon tool={Tools.HTML5} />
-                <ToolIcon tool={Tools.CSS} />
+                <ToolIcon tool={Tools.Java} />
+                <ToolIcon tool={Tools.Minecraft} />
+                <ToolIcon tool={Tools.Redis} />
                 <ToolIcon tool={Tools.JavaScript} />
                 <ToolIcon tool={Tools.React} />
-                <ToolIcon tool={Tools.PixiJS} />
-                <ToolIcon tool={Tools.Electron} />
+                <ToolIcon tool={Tools.NextJS} />
+                <ToolIcon tool={Tools.NodeJS} />
+                <ToolIcon tool={Tools.MongoDB} />
                 <ToolIcon tool={Tools.SocketIO} />
               </div>
             </CardFooter>
             <CardFooter className={styles.project__buttons}>
-              <Button disabled>Demo Video</Button>
+              <Button href="https://github.com/RunedCo/Bolster">GitHub</Button>
             </CardFooter>
           </Card>
 
@@ -183,6 +188,41 @@ export default function Home() {
                 <ToolIcon tool={Tools.NodeJS} />
                 <ToolIcon tool={Tools.MongoDB} />
                 <ToolIcon tool={Tools.Twitch} />
+              </div>
+            </CardFooter>
+            <CardFooter className={styles.project__buttons}>
+              <Button disabled>Demo Video</Button>
+            </CardFooter>
+          </Card>
+
+          <Card className={styles.project__card}>
+            <CardImage src="/projects/puppetpals.png" />
+
+            <CardContent>
+              <CardTitle>Puppet Pals</CardTitle>
+              <CardText>
+                A virtual puppeteering tool designed for live shows and online
+                tabletop RPG games. Initially built in C# using the Unity game
+                engine in 2017, I took over active development in 2019.
+              </CardText>
+              <CardText>
+                It is currently undergoing a rewrite <em>(pictured above)</em>{" "}
+                using React, TypeScript, and Electron with PixiJS as the
+                rendering engine to allow for browser-based use.
+              </CardText>
+              <CardText></CardText>
+            </CardContent>
+            <CardFooter className={styles.project__tools}>
+              <div>
+                <ToolIcon tool={Tools.CSharp} />
+                <ToolIcon tool={Tools.Unity} />
+                <ToolIcon tool={Tools.HTML5} />
+                <ToolIcon tool={Tools.CSS} />
+                <ToolIcon tool={Tools.JavaScript} />
+                <ToolIcon tool={Tools.React} />
+                <ToolIcon tool={Tools.PixiJS} />
+                <ToolIcon tool={Tools.Electron} />
+                <ToolIcon tool={Tools.SocketIO} />
               </div>
             </CardFooter>
             <CardFooter className={styles.project__buttons}>

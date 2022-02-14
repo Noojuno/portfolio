@@ -48,7 +48,7 @@ export const Tools: { [id: string]: Tool } = {
   },
   LESS: {
     name: "LESS",
-    icon: "/tools/less.png",
+    icon: "/tools/less.svg",
     hide: true,
   },
   CSSModules: {
@@ -83,7 +83,7 @@ export const Tools: { [id: string]: Tool } = {
   },
   AWS: {
     name: "Amazon Web Services (AWS)",
-    icon: "/tools/aws.png",
+    icon: "/tools/aws.svg",
   },
   /* Databases */
   MongoDB: {
@@ -93,6 +93,10 @@ export const Tools: { [id: string]: Tool } = {
   MySQL: {
     name: "MySQL/MariaDB",
     icon: "/tools/mysql.png",
+  },
+  Redis: {
+    name: "Redis",
+    icon: "/tools/redis.png",
   },
   /* Misc */
   Wordpress: {
