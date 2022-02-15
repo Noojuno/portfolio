@@ -34,7 +34,7 @@ export default function Home() {
               <p className={styles.links}>
                 <a href="https://github.com/Noojuno">GitHub</a> •{" "}
                 <a href="https://twitter.com/jonokemball">Twitter</a> •{" "}
-                <a href="mailto:jono@runed.co">Email</a>
+                <a href="mailto:jonathankemball@gmail.com">Email</a>
               </p>
             </div>
             <div className={styles.col__image}>
