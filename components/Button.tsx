@@ -11,13 +11,7 @@ interface ButtonProps {
   disabled?: boolean;
 }
 
-export function Button({
-  children,
-  className,
-  onClick = () => {},
-  href,
-  disabled,
-}: ButtonProps) {
+export function Button({ children, className, onClick = () => {}, href, disabled }: ButtonProps) {
   return (
     <a
       href={disabled ? null : href}
