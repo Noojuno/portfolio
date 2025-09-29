@@ -1,10 +1,9 @@
 import classNames from "classnames";
 import styles from "./Card.module.scss";
-
-type ReactElement = JSX.Element | string;
+import type { ReactNode } from "react";
 
 interface CardProps {
-  children?: ReactElement | ReactElement[];
+  children?: ReactNode;
   className?: string;
 }
 
@@ -17,7 +16,7 @@ export function Card({ children, className }: CardProps) {
   return <div className={classNames(styles.card, className)}>{children}</div>;
 }
 
-export function CardImage({ src, alt = null, className }: CardImageProps) {
+export function CardImage({ src, alt, className }: CardImageProps) {
   return (
     <div className={classNames(styles.card__image, className)}>
       <img src={src} alt={alt} />
